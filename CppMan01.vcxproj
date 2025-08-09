@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hdr\Random.h" />
+    <ClInclude Include="hdr\Session.h" />
+    <ClInclude Include="hdr\Wordlist.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CppMan01.cpp" />
+    <ClCompile Include="src\Session.cpp" />
+    <ClCompile Include="src\Wordlist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -124,16 +137,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="CppMan01.cpp" />
-    <ClCompile Include="Session.cpp" />
-    <ClCompile Include="Wordlist.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Random.h" />
-    <ClInclude Include="Session.h" />
-    <ClInclude Include="Wordlist.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

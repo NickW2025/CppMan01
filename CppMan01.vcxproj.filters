@@ -15,25 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CppMan01.cpp">
+    <ClInclude Include="hdr\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hdr\Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hdr\Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CppMan01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Wordlist.cpp">
+    <ClCompile Include="src\Session.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Session.cpp">
+    <ClCompile Include="src\Wordlist.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Random.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Wordlist.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Session.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
