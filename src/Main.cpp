@@ -13,8 +13,8 @@ int main() {
     session.updateSessionState();
   }
 
-  if (session.isWon()) std::cout << "\nCongratulations! You Win!\nThe Word was: " 
-      << session.getSecretWord() << "!\n";
+  if (session.isWon()) std::cout << "\nCongratulations! You Win!\n"
+    << "The Word was : " << session.getSecretWord() << "!\n";
   else std::cout << "\nYou Lose. \nThe Word was: " << session.getSecretWord() << ".\n";
 
   std::cout << "Thank you for playing!\n";

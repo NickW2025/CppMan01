@@ -28,19 +28,20 @@ void Session::updateSessionState() {
   }
   std::cout << '\n';
 
-  bool complete = true;
-  for (size_t i{ 0 }; i < secret_word.size(); ++i) {
-    if (contains(guessed_letters, secret_word.at(i))) {
-      output_word.push_back(secret_word.at(i));
+  {
+    bool complete = true;
+    for (size_t i{ 0 }; i < secret_word.size(); ++i) {
+      if (contains(guessed_letters, secret_word.at(i))) {
+        output_word.push_back(secret_word.at(i));
+      }
+      else {
+        output_word.push_back('_');
+        complete = false;
+      }
     }
-    else {
-      output_word.push_back('_');
-      complete = false;
-    }
+    gameWon = complete;
   }
-  
-  if (complete) gameWon = true;
-  else std::cout << output_word << "\n\n";
+  std::cout << output_word << "\n\n";
 }
 
 char Session::inputCharacter() {
