@@ -8,6 +8,15 @@ void playGame();
 
 int main() {
   playGame();
+
+  char c{};
+  while (true) {
+    std::cout << "\nPlay again? (y/n) ";
+    std::cin >> c;
+    if (c == 'y') playGame();
+    else if (c == 'n') break;
+  }
+
   return 0;
 }
 
@@ -26,14 +35,7 @@ void playGame() {
   else std::cout << "\nYou Lose. \nThe Word was: " << session.getSecretWord() << ".\n";
 
   std::cout << "Thank you for playing!\n";
-
-  char c{};
-  while (true) {
-    std::cout << "\nPlay again? (y/n) ";
-    std::cin >> c;
-    if (c == 'y') playGame();
-    else if (c == 'n') break;
-  }
+  return;
 }
 
 
