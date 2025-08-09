@@ -39,4 +39,68 @@
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+    </ClInclude>
+    <ClInclude Include="Wordlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
