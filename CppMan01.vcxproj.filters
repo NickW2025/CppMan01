@@ -24,6 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+    <None Include="x64\Debug\CppMan01.exe" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Src">
