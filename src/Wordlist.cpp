@@ -10,9 +10,9 @@ namespace WordList {
     "opinion", "spaghetti", "pizza", "lasagna", "computer"
   };
 
-  std::string_view WordList::getRandomWord() {
-    std::size_t max = WordList::word_list.size() - 1;
+  std::string_view getRandomWord() {
+    std::size_t max = word_list.size() - 1;
     std::size_t index{ Random::get<std::size_t>(0, max) };
-    return WordList::word_list.at(index);
+    return word_list.at(index);
   }
 }
