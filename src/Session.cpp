@@ -7,9 +7,10 @@ using std::size_t;
 
 Session::Session(std::string_view sw_i) :
   secret_word{ sw_i }, guessed_letters{}, gameWon{ false },
-  max_attempts{ 10 }, incorrect_guesses{} {
+  max_attempts{ 10 }, incorrect_guesses{} 
+  {
   attempts = max_attempts;
-};
+  };
 
 std::string_view Session::getSecretWord() const {
   return secret_word;
@@ -18,8 +19,6 @@ std::string_view Session::getSecretWord() const {
 void Session::updateSessionState() {
   guessed_letters.push_back(inputCharacter());
 
-  std::string output_word{""};
-
   std::cout << "Attempts remaining: ";
   for (int i{ 0 }; i < max_attempts; ++i) {
     if (i < attempts) std::cout << '#';
@@ -27,27 +26,26 @@ void Session::updateSessionState() {
   }
   std::cout << '\n';
 
-
   std::cout << "Incorrect Guesses so far: ";
   for (char c : incorrect_guesses) {
     std::cout << c << ' ';
   }
   std::cout << '\n';
 
-  {
-    bool complete = true;
-    for (size_t i{ 0 }; i < secret_word.size(); ++i) {
-      if (contains(guessed_letters, secret_word.at(i))) {
-        output_word.push_back(secret_word.at(i));
-      }
-      else {
-        output_word.push_back('_');
-        complete = false;
-      }
+  std::string output_word{ "" };
+  bool complete = true;
+
+  for (size_t i{ 0 }; i < secret_word.size(); ++i) {
+    if (contains(guessed_letters, secret_word.at(i))) {
+      output_word.push_back(secret_word.at(i));
     }
-    gameWon = complete;
+    else {
+      output_word.push_back('_');
+      complete = false;
+    }
   }
-  std::cout << output_word << "\n\n";
+  gameWon = complete;
+  std::cout << output_word << "\n\n";  
 }
 
 char Session::inputCharacter() {
