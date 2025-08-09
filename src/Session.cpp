@@ -5,6 +5,12 @@
 
 using std::size_t;
 
+Session::Session(std::string_view sw_i) :
+  secret_word{ sw_i }, guessed_letters{}, gameWon{ false },
+  max_attempts{ 10 }, incorrect_guesses{} {
+  attempts = max_attempts;
+};
+
 std::string_view Session::getSecretWord() const {
   return secret_word;
 }
@@ -48,6 +54,7 @@ char Session::inputCharacter() {
   char chr{};
   std::cout << "\nEnter a character: ";
   std::cin >> chr;
+
   if (std::cin.eof()) {
     std::cout << "EOF Error.";
     exit(-1);
@@ -55,15 +62,13 @@ char Session::inputCharacter() {
 
   if (std::cin.fail()) {
     std::cout << "Invaild Input.\n";
-    std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    cinCleanup();
     return inputCharacter();
   }
 
   if (!std::cin.eof() && std::cin.peek() != '\n') {
     std::cout << "Invaild Input.\n";
-    std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    cinCleanup();
     return inputCharacter();
   }
 
@@ -88,8 +93,7 @@ char Session::inputCharacter() {
 
   else {
     std::cout << "Invalid input.\n";
-    std::cin.clear();
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    cinCleanup();
     return inputCharacter();
   }
 }
@@ -107,4 +111,9 @@ bool contains(std::vector<char>& v_i, char chr_i) {
     if (v_i.at(i) == chr_i) return true;
   }
   return false;
+}
+
+void cinCleanup() {
+  std::cin.clear();
+  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }

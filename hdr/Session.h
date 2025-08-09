@@ -5,14 +5,11 @@
 #include <vector>
 
 static bool contains(std::vector<char>&, char);
+static void cinCleanup();
 
 class Session {
   public:
-    Session(std::string_view sw_i) :
-      secret_word{ sw_i }, guessed_letters{}, gameWon{ false },
-      max_attempts{ 10 }, incorrect_guesses{} {
-      attempts = max_attempts;
-    };
+    Session(std::string_view);
     void updateSessionState();
     std::string_view getSecretWord() const;
     bool isWon() const;
