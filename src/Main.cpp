@@ -4,8 +4,6 @@
 #include "../hdr/Session.h"
 #include "../hdr/Wordlist.h"
 
-
-
 int main() {
   std::cout << "Welcome to CppMan!\nTo win : guess the word.\n"
             << "To lose : run out of(#) attempts.\n";

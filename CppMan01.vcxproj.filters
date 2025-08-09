@@ -4,7 +4,7 @@
     <ClCompile Include="src\Session.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="src\CppMan01.cpp">
+    <ClCompile Include="src\Main.cpp">
       <Filter>Src</Filter>
     </ClCompile>
     <ClCompile Include="src\Wordlist.cpp">

@@ -24,7 +24,7 @@
     <ClInclude Include="hdr\Wordlist.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CppMan01.cpp" />
+    <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Session.cpp" />
     <ClCompile Include="src\Wordlist.cpp" />
   </ItemGroup>
