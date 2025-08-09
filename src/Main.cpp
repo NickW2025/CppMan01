@@ -9,8 +9,8 @@ void playGame();
 int main() {
   playGame();
 
-  char c{};
   while (true) {
+    char c{};
     std::cout << "\nPlay again? (y/n) ";
     std::cin >> c;
     if (c == 'y') playGame();
