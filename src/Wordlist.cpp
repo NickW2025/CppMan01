@@ -1,8 +1,8 @@
 #include <vector>
 #include <string>
 
-#include "Wordlist.h"
-#include "Random.h"
+#include "..\hdr\Random.h"
+#include "..\hdr\Wordlist.h"
 
 namespace WordList {
   std::vector<std::string_view> word_list { 

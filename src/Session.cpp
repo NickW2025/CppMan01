@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-#include "Session.h"
+#include "../hdr/Session.h"
+
 using std::size_t;
 
 std::string_view Session::getSecretWord() const {

@@ -1,8 +1,10 @@
 #include <iostream>
 #include <vector>
 
-#include "Wordlist.h"
-#include "Session.h"
+#include "../hdr/Session.h"
+#include "../hdr/Wordlist.h"
+
+
 
 int main() {
   std::cout << "Welcome to CppMan!\nTo win : guess the word.\n"
